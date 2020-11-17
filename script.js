@@ -222,5 +222,5 @@ function getRandomMemory() {
 
 //scroll for hero image
 function scrollWin() {
-  window.scrollTo(0, 690);
+  window.scrollTo(0, 700);
 }
