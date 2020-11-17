@@ -1,0 +1,143 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+  background-image: url("images/bckg.png");
+  background-repeat: repeat;
+  background-size: 1000px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.mainHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/main.gif");
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 10vmin;
+  padding: 10vmin;
+}
+
+.mainHeader h1:hover{
+  cursor: pointer;
+  color: white;
+}
+
+.mainContent {
+  padding: 8vmin;
+}
+
+h1 {
+  display: flex;
+  color: black;
+}
+
+hr {
+  border:none;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 5vmin;
+  font-size: 15vmin;
+  font-family: 'Cedarville Cursive', cursive;
+
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 2vmin;
+  grid-row-gap: 2vmin;
+  padding: 1vmin;
+}
+
+.grid img {
+  padding: 2vmin;
+  width: 50vmin;
+  height: auto;
+}
+
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border:dotted 2px #0092FB;
+}
+
+.contentItem:hover {
+  background-image: url(images/hover.gif);
+}
+
+.contentYear {
+  display: flex;
+  font-size: 9vmin;
+  color: #464646;
+  font-family: 'Indie Flower', cursive;
+}
+
+.contentNotes {
+  display: flex;
+  padding: 3vmin;
+  color: #464646;
+  font-size: 9vmin;
+  font-family: 'Indie Flower', cursive;
+}
+
+
+@media only screen and (min-width: 768px) { /*tablets and laptops*/
+
+  .mainHeader {
+    font-size: 8vmin;
+    padding: 10vmin;
+    height: 80vh;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    padding: 2vmin;
+    font-size: 12vmin;
+    font-family: 'Cedarville Cursive', cursive;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2vmin;
+    grid-row-gap: 2vmin;
+    padding: 1vmin;
+  }
+
+  .grid img {
+    width: 30vmin;
+  }
+
+  .contentYear {
+    display: flex;
+    font-size: 5vmin;
+    color: #464646;
+    font-family: 'Indie Flower', cursive;
+  }
+
+  .contentNotes {
+    display: flex;
+    padding: 3vmin;
+    color: #464646;
+    font-size: 4vmin;
+    font-family: 'Indie Flower', cursive;
+  }
+
+}
